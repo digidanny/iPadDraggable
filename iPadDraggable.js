@@ -15,7 +15,7 @@
 (function() { 
 
   if (!jQuery) {
-    console.log( 'jQuery required.')
+    console.log( 'jQuery required.' )
     return;
   }
   
