@@ -12,14 +12,14 @@
  *
  */
  
-(function() { 
+(function($) { 
 
-  if (!jQuery) {
-    console.log( 'jQuery required.')
+  if (!$) {
+    console.log( 'jQuery required.');
     return;
   }
   
-  var iPadDraggable = function() {
+  var IPadDraggable = function() {
     var self = this;
     
     self.init = function() {      
@@ -70,7 +70,7 @@
   };
   
   $(function() {
-    new iPadDraggable();
+    var iPadDraggable = new IPadDraggable();
   });
   
-})();
+}(jQuery));
